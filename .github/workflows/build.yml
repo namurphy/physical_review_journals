@@ -16,6 +16,9 @@ jobs:
       with:
           node-version: 20.x
     - uses: zauguin/install-texlive@v4
+      with:
+        packages: >
+          latex
     - uses: astral-sh/setup-uv@v7
     - run: uv python install 3.14
     - run: uv tool install mystmd
