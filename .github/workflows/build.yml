@@ -18,7 +18,7 @@ jobs:
     - uses: zauguin/install-texlive@v4
       with:
         packages:
-          latex-bin latexmk
+          latex-bin latexmk xelatex
     - uses: astral-sh/setup-uv@v7
     - run: uv python install 3.14
     - run: uv tool install mystmd
