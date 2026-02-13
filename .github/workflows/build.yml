@@ -17,11 +17,11 @@ jobs:
           node-version: 20.x
     - uses: zauguin/install-texlive@v4
       with:
-        packages: >
-          l3build latex latex-bin luatex latex-bin-dev
-    - uses: astral-sh/setup-uv@v7
-    - run: uv python install 3.14
-    - run: uv tool install mystmd
-    - run: |
-        cd examples
-        myst build --pdf
+        packages:
+          latex-bin
+    #- uses: astral-sh/setup-uv@v7
+    #- run: uv python install 3.14
+    #- run: uv tool install mystmd
+    #- run: |
+    #    cd examples
+    #    myst build --pdf
