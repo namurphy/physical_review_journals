@@ -19,9 +19,9 @@ jobs:
       with:
         packages:
           latex-bin
-    #- uses: astral-sh/setup-uv@v7
-    #- run: uv python install 3.14
-    #- run: uv tool install mystmd
-    #- run: |
-    #    cd examples
-    #    myst build --pdf
+    - uses: astral-sh/setup-uv@v7
+    - run: uv python install 3.14
+    - run: uv tool install mystmd
+    - run: |
+        cd examples
+        myst build --pdf
