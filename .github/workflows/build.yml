@@ -15,7 +15,7 @@ jobs:
       uses: actions/setup-node@v4
       with:
           node-version: 20.x
-    #- uses: paolobrasolin/setup-texlive-action@v1
+    - uses: paolobrasolin/setup-texlive-action@v1
     #- uses: astral-sh/setup-uv@v7
     #- run: uv python install 3.14
     #- run: uv tool install mystmd
